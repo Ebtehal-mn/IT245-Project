@@ -48,47 +48,47 @@ public class VistorHashMap {
   //Time complexty:O(1)
   public void addVisitor(string visitorName, string visitTime) {
     visitors.put(visitorName, visitTime); 
-    System.out.printin(visitorName + " was added to the visitor records."); 
+    System.out.println(visitorName + " was added to the visitor records."); 
   }
 // search for a visitor
   public void searchVisitor(string visitorName) {
     if (visitors.containsKey(visitorName) {
-      System.out.printin(visitorName + " visited at:" + visitoers.get(visitorName));
+      System.out.printiln(visitorName + " visited at:" + visitoers.get(visitorName));
     }
     else { 
-      System.out.printin("visitor not found.");
+      System.out.println("visitor not found.");
     }
   }
   //update visitor information
   public void updeteVisitor(String visitorName, String NewVisitTime) {
     if (visitors.containsKey(visitorName)) {
       visitors.put(visitorName, NewVisitTime);
-      System.out.printin(visitorName + "information updated.");
+      System.out.println(visitorName + "information updated.");
     } else{
-      System.out.printin("Visitor not found")
+      System.out.println("Visitor not found")
         }
   }
   //Remove a visitor
   public void removeVisitor(String visitorName) {
     if (visitors.containsKey(VisitorName)) {
       visitors.remove(visitorName);
-      System.out.printin(visitorName + " removed successfully.");
+      System.out.println(visitorName + " removed successfully.");
     } else {
-      System.out.printin("Visitor not found.");
+      System.out.println("Visitor not found.");
     }
   }
 
   //Display all visitors
   public void displayVisitors() {
     if (visitors.isEmpty()) {
-      System.out.printin("No visitors found.");
+      System.out.println("No visitors found.");
       return;
     }
     
-    System.out.prinin("Visitor records:");
+    System.out.prinln("Visitor records:");
 
     for (String name : visitors.keySet()) {
-      System.out.printin(name + " -> " + visitors.get(name));
+      System.out.println(name + " -> " + visitors.get(name));
     }
   }
 }
