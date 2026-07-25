@@ -34,4 +34,3 @@ To support teamwork and maintain a transparent GitHub commit history, the projec
 ---
 *Data Structure - Information Technology - Saudi Electronic University*
 
-```
