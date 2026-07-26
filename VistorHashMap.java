@@ -49,4 +49,16 @@ public void removVisitor(String visitorName) {
     System.out.println(" visitor not found.");
   }
 }
-  
+
+//displaying all visitors is O(n)
+  public void displayVisitors() {
+    if (visitors.isEmpty()) {
+      System.out.println(" No visitors found, the list is empty.");
+      return;
+    }
+    System.out.println(" Visitor recoreds (Max limit:" + MAX_VISITORS +"):);
+    for (Map.Entry<String, String> entry : visitors.entrySet()) {
+      System.out.println(entry.getKey() + " -> " + entry.getValue());
+    }
+  }
+}
