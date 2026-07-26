@@ -19,3 +19,14 @@ public void addVisitor(String visitorName, String visitTime) {
     String oldestKey = visitors.KeySet().iterator().next();
     visitors.remove(oldestKey); // remove the oldest visitor from the list 
   }
+  visitors.put(visitorName, visitTime);//add the visitor to the list
+  System.out.prinln(visitorName + " was added/ updated in the visitor records.");
+}
+  //searching operationis O(1) on average 
+public void searchVisitor(String visitorName) {
+  if (visitors.containsKey(visitorName)) {
+    System.out.println(visitorName + " visited at: " + visitor.get(visitorName));
+  } else {
+    System.out.println(visitorName + " is not found. ");
+  }
+}
