@@ -10,8 +10,12 @@ public VisitorHashMap() {
 }
 // adding a visitor, for linkedHashMap put operation is O(1)
 public void addVisitor(String visitorName, String visitTime) {
-  //this if is to check if the name is already in the list
+  //check if the visitor name is already exisist in the list
    if (visitors.containsKey(visitorName)) {
-     visitors.remove(visitorName); //here it will delet it to be able to add it at last one
+     visitors.remove(visitorName); //remove it so it can be added again as most recent visitor 
    }
-  
+  //if the list reaches its maximum capcaity, remove the oldest visitor
+  if (visitor.size() >= MAX_VISITORS) {
+    String oldestKey = visitors.KeySet().iterator().next();
+    visitors.remove(oldestKey); // remove the oldest visitor from the list 
+  }
