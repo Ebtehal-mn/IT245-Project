@@ -38,4 +38,15 @@ public void updateVisitor(String visitorName, String NewVisitTime) {
   } else {
     System.out.println(" visitor not found.");
   }
+}  
+
+//removing a visitor is O(1) on average
+public void removVisitor(String visitorName) {
+  if (visitors.containsKey(visitorName)) {
+    visitors.remove(visitorName);
+    System.out.println(visitorName + "removed successfully.");
+  } else {
+    System.out.println(" visitor not found.");
+  }
 }
+  
