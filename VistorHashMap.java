@@ -30,3 +30,12 @@ public void searchVisitor(String visitorName) {
     System.out.println(visitorName + " is not found. ");
   }
 }
+//updateing visitor information is O(1) on average
+public void updateVisitor(String visitorName, String NewVisitTime) {
+  if (visitors.containsKey(visitorName)) {
+    Visitor.put(visitorName, newVisitTime);
+    System.out.println(visitorName + " information updated.");
+  } else {
+    System.out.println(" visitor not found.");
+  }
+}
