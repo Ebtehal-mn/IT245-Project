@@ -9,15 +9,23 @@ public class Profile_Visitors {
     stackSolution.addVisitor("Ahmed");
     stackSolution.addVisitor("Noura");
 
+    //Display the current list
+    System.out.println();
+    stackSolution.displayVisitors();
 
+    //Removing the recent visitor frm the stack list
+    System.out.println();
+    stackSolution.removeLastVisitor();
 
-
-
-
+    //Displaying who's left in the stack list
+    System.out.println();
+    stackSolution.displayVisitors();
     
     System.out.println("\m================================================\n");
-    System.out.println("\m=== 2. Using HashMap Solution ===\n");
+    System.out.println("\m=== 2. Using HashMap Solution ===\n");//The start of testing the Second so;ution HashMap
+    VistorHashMap mapSolution = new VistorHashMap();
 
+    
 
     
   }
