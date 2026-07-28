@@ -21,8 +21,8 @@ To support teamwork and maintain a transparent GitHub commit history, the projec
 ## Repository Files
 
 * `Profile_Visitors.java` — Containing the demonstration and testing suite for both algorithmic solutions.
-* `Stack_Solution.java` — Stack-based implementation for tracking recent visits.
-* `HashMap_Solution.java` — HashMap-based implementation for optimized lookups and performance.
+* `VisitorStack.java` — Stack-based implementation for tracking recent visits.
+* `VistorHashMap.java` — HashMap-based implementation for optimized lookups and performance.
 
 ---
 
