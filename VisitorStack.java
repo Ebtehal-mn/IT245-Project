@@ -14,7 +14,16 @@ public void addVisitor(String visitorName){
 visitor.push(visitorName);
 System.out.println(visitorName + " was added to the recent visitors list.");
 }
-  
+  //Remove the last visitor 
+//pop operation takes constant time O(1)
+public void removeLastVistor(){
+if (!visitors.isEmpty()){
+String removed = visitors.pop();
+System.out.println(removed + " was removed from the list.");
+} else {
+System.out.println(" The visitors list is empty.");
+}
+}
 
 //Student 2
 
