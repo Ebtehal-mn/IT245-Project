@@ -8,7 +8,12 @@ private Stack<String> visitors;
 public VisitorStack(){
 visitors = new Stack<>();
 }
-
+//Add a new visitor
+//push operation takes constant time O(1)
+public void addVisitor(String visitorName){
+visitor.push(visitorName);
+System.out.println(visitorName + " was added to the recent visitors list.");
+}
   
 
 //Student 2
