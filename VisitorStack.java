@@ -24,6 +24,13 @@ System.out.println(removed + " was removed from the list.");
 System.out.println(" The visitors list is empty.");
 }
 }
+//Display all visitors
+//It iterate and print the list O(n)
+public void displayVisitors(){
+if (visitors.isEmpty()){ 
+System.out.println("No recent visrors.");
+return;
+}
 
 //Student 2
 
