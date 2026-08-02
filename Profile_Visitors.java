@@ -25,7 +25,16 @@ public class Profile_Visitors {
     System.out.println("\m=== 2. Using HashMap Solution ===\n");//The start of testing the Second so;ution HashMap
     VistorHashMap mapSolution = new VistorHashMap();
 
+    //Adding to the HashMap list
+    System.out.println("--- Filling the list to its Max capacity (5 Visitors) ---");
+    mapSolution.addVisitor("Sara", "10:00 AM");
+    mapSolution.addVisitor("Ahmed", "10:30 AM");
+    mapSolution.addVisitor("Noura", "11:00 AM");
+    mapSolution.addVisitor("Khalid", "11:30 AM");
+    mapSolution.addVisitor("Lama", "12:00 PM");
     
+    System.out.println();
+    mapSolution.displayVisitors();//to display all the list
 
     
   }
