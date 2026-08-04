@@ -48,6 +48,14 @@ public class Profile_Visitors {
     System.out.println();
     mapSolution.displayVisitors();
 
+    //Searching in the list
+    System.out.println("\n--- Search and Removal ---");
+    mapSolution.searchVisitor("Sara");
+    mapSolution.searchVisitor("Khalid");
+    mapSolution.searchVisitor("Lama");
+
+    System.out.println("\n--- Final Records ---");
+    mapSolution.displayVisitors();
     
   }
 }
