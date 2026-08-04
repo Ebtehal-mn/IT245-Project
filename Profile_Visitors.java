@@ -36,6 +36,18 @@ public class Profile_Visitors {
     System.out.println();
     mapSolution.displayVisitors();//to display all the list
 
+    //Testing adding existing member to the list
+    System.out.println("\n--- Addin an Existing Visitor ---");
+    mapSolution.addVisitor("Noura", "01:15 PM");
+    System.out.println();
+    mapSolution.displayVisitors();
+
+    //Testing to add a new member to the list, it will remove the old one and add the new instea
+    System.out.println("\n--- Adding a New Visitor to a Full list --");
+    mapSolution.addVisitor("Fahad", "02:00 PM");
+    System.out.println();
+    mapSolution.displayVisitors();
+
     
   }
 }
