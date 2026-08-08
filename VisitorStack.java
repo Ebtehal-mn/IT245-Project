@@ -28,4 +28,9 @@ if (visitors.isEmpty()){
 System.out.println("No recent visrors.");
 return;
 }
-
+System.out.println("Recent Profile Visitors:");
+for (int i = visitors.size()-1;i>=0;i--){
+System.out.println("-"+visitors.get(i));
+}
+}
+}
